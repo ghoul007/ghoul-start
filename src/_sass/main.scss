@@ -1,6 +1,8 @@
 @charset "utf-8";
- 
+@import "ghoul.scss";
+
 
 html {
-    background-color: green;
+    
+    background-color: $green;
 }
