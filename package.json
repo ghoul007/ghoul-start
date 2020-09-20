@@ -1,7 +1,6 @@
 {
   "name": "ghoul-start",
   "version": "0.0.4",
-  "description": "Start package for Ghoul",
   "keywords": [
     "sass",
     "Ghoul",
@@ -13,7 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/ghoul007/Ghoul-start.git"
   },
-  
+  "description": "Ghoul CSS framework",
+  "main": "ghoul.sass",
+  "unpkg": "dist/css/ghoul.css",
+  "style": "ghoul-start/css/ghoul.css",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^9.7.6",
