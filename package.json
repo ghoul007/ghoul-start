@@ -7,6 +7,12 @@
     "css",
     "start"
   ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "scss",
+    "framework"
+  ],
   "author": "Ahmed Ghoul <ghoul.ahmed5@gmail.com> (https://github.com/ghoul007/ghoul-start)",
   "repository": {
     "type": "git",
