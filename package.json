@@ -1,28 +1,21 @@
 {
   "name": "ghoul-start",
-  "version": "0.0.4",
-  "keywords": [
-    "sass",
-    "Ghoul",
-    "css",
-    "start"
-  ],
-  "license": "MIT",
+  "version": "0.0.0-development",
   "keywords": [
     "css",
     "scss",
     "framework"
   ],
+  "license": "MIT",
   "author": "Ahmed Ghoul <ghoul.ahmed5@gmail.com> (https://github.com/ghoul007/ghoul-start)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ghoul007/Ghoul-start.git"
+    "url": "https://github.com/ghoul007/Ghoul-start.git"
   },
   "description": "Ghoul CSS framework",
   "main": "ghoul.sass",
   "unpkg": "dist/css/ghoul.css",
   "style": "ghoul-start/css/ghoul.css",
-  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^9.7.6",
     "babel-cli": "^6.26.0",
@@ -31,7 +24,8 @@
     "Ghoul": "^0.8.2",
     "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^7.1.0"
+    "postcss-cli": "^7.1.0",
+    "semantic-release": "^17.1.2"
   },
   "scripts": {
     "css-deploy": "npm run css-build && npm run css-postcss",
@@ -41,6 +35,18 @@
     "deploy": "npm run css-deploy && npm run js-build",
     "js-build": "babel src/_javascript --out-dir dist/js",
     "js-watch": "npm run js-build -- --watch",
-    "start": "npm-run-all --parallel css-watch js-watch"
+    "start": "npm-run-all --parallel css-watch js-watch",
+    "semantic-release": "semantic-release"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ]
+  },
+  "dependencies": {
+    "semantic-release": "^17.1.1"
   }
 }
